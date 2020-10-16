@@ -10,6 +10,6 @@ def my_sum(iterable):
     return tot
 
 
-@lru_cachelru_cache(maxsize=None)  # Note: -> @cache in python >= 3.9
+@lru_cache(maxsize=None)  # Note: -> @cache in python >= 3.9
 def factorial(n):
     return n * factorial(n-1) if n else 1
